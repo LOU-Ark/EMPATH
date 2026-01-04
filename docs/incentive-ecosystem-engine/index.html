@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incentive Ecosystem Engine | Co-Create Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .bg-custom { background-color: #FF6B6B; }
+        .text-custom { color: #FF6B6B; }
+        .border-custom { border-color: #FF6B6B; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FF6B6B 0%, #ff8e8e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
+    <a href="../index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #FF6B6B">
+        C
+      </div>
+      <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
+        Co-Create Tech
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
+      <a href="../open-innovation-sandbox/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Open Innovation Sandbox
+      </a>
+    
+      <a href="../knowledge-synergy-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Knowledge Synergy Hub
+      </a>
+    
+      <a href="../incentive-ecosystem-engine/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Incentive Ecosystem Engine
+      </a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#" class="hidden sm:block px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200 whitespace-nowrap">
+        Contact
+      </a>
+      <button class="md:hidden p-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <i class="fa-solid fa-bars-staggered text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
+    <div class="flex flex-col gap-4">
+      <a href="../open-innovation-sandbox/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Open Innovation Sandbox
+      </a>
+    
+      <a href="../knowledge-synergy-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Knowledge Synergy Hub
+      </a>
+    
+      <a href="../incentive-ecosystem-engine/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Incentive Ecosystem Engine
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-32">
+    <!-- Hero Section -->
+    <section class="relative max-w-7xl mx-auto px-6 mb-24 overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-custom opacity-10 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute top-48 -left-24 w-64 h-64 bg-indigo-400 opacity-10 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10 text-center md:text-left md:flex items-center gap-12">
+            <div class="md:w-1/2">
+                <span class="inline-block px-4 py-1 rounded-full bg-red-50 text-custom font-black text-xs uppercase tracking-widest mb-6">Incentive Redefined</span>
+                <h1 class="text-5xl md:text-7xl font-black font-montserrat leading-tight mb-8">
+                    Value the <br><span class="gradient-text">Invisible Spark.</span>
+                </h1>
+                <p class="text-lg text-slate-600 font-medium leading-relaxed mb-10 max-w-xl">
+                    貢献を可視化し、共感を価値へと変換する。Incentive Ecosystem Engineは、個人の情熱を永続的なモチベーションに変え、組織にダイナミックな循環を生み出す次世代のインセンティブ設計ツールです。
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <button class="px-8 py-4 bg-custom text-white font-black rounded-2xl shadow-xl shadow-red-200 hover:-translate-y-1 transition-transform">
+                        Explore Engine
+                    </button>
+                    <button class="px-8 py-4 bg-white border-2 border-slate-100 font-black rounded-2xl hover:bg-slate-50 transition-colors">
+                        Read Concept
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-16 md:mt-0 relative">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4 pt-12">
+                        <div class="glass-card p-6 rounded-3xl shadow-sm transform hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-heart-pulse text-3xl text-custom mb-4"></i>
+                            <p class="font-bold text-slate-800">Empathy Score</p>
+                        </div>
+                        <div class="bg-slate-900 p-6 rounded-3xl shadow-xl text-white transform hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-coins text-3xl text-yellow-400 mb-4"></i>
+                            <p class="font-bold">Dynamic Reward</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-indigo-600 p-6 rounded-3xl shadow-xl text-white transform hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-chart-line text-3xl mb-4"></i>
+                            <p class="font-bold">Growth Map</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-3xl shadow-sm transform hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-seedling text-3xl text-emerald-500 mb-4"></i>
+                            <p class="font-bold">Contribution Tracking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Philosophy -->
+    <section class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-black mb-6">循環する、価値の生態系</h2>
+                <p class="text-slate-500 font-medium max-w-2xl mx-auto">金銭的な報酬を超えた、新しいインセンティブのカタチ。私たちは3つの柱でエコシステムを構築します。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group p-8 rounded-4xl bg-slate-50 border-2 border-transparent hover:border-custom transition-all duration-500">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-custom text-2xl mb-8 shadow-sm group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">Invisible Contribution</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">
+                        「誰かの助けになった」「新しいアイデアを出した」といった数値化しにくい貢献を、独自のアルゴリズムでスコアリング。
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="group p-8 rounded-4xl bg-slate-50 border-2 border-transparent hover:border-custom transition-all duration-500">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-custom text-2xl mb-8 shadow-sm group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">Personalized Reward</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">
+                        画一的な報酬ではなく、個人の価値観やライフスタイルに最適化された体験や機会をリワードとして提供。
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="group p-8 rounded-4xl bg-slate-50 border-2 border-transparent hover:border-custom transition-all duration-500">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-custom text-2xl mb-8 shadow-sm group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">Sustainable Loop</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">
+                        受け取ったリワードがさらなる貢献意欲を生む。モチベーションの自己増殖を可能にするサイクルを設計します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Banner -->
+    <section class="max-w-7xl mx-auto px-6 my-24">
+        <div class="relative rounded-[3rem] overflow-hidden bg-slate-900 py-20 px-10 text-center">
+            <div class="absolute inset-0 opacity-30">
+                <div class="absolute inset-0 bg-gradient-to-br from-custom to-indigo-600 mix-blend-multiply"></div>
+                <div class="h-full w-full" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+            </div>
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-8 leading-tight">
+                    Your Passion, <br>Fully Recognized.
+                </h2>
+                <p class="text-white/70 font-medium mb-12 max-w-xl mx-auto">
+                    私たちは、テクノロジーの力で「やりがい」を「仕組み」へと昇華させます。
+                </p>
+                <div class="inline-flex items-center gap-4 p-2 bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/20">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-custom border-2 border-slate-900"></div>
+                        <div class="w-8 h-8 rounded-full bg-indigo-500 border-2 border-slate-900"></div>
+                        <div class="w-8 h-8 rounded-full bg-emerald-500 border-2 border-slate-900"></div>
+                    </div>
+                    <span class="text-white text-sm font-bold">Joined by 1,000+ Creators</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-slate-900 text-white py-16 px-6 mt-20">
+  <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
+    <h4 class="text-2xl font-black mb-6">Co-Create Tech</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーを通じて個人の創造性を解き放ち、心に響く共感の輪を世界に広げる。</p>
+  </div>
+  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 Co-Create Tech. Built with MySiteGen-Agent.</p>
+</footer>
+
+</body>
+</html>
