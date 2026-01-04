@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Innovation Sandbox | Co-Create Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+            overflow-x: hidden;
+        }
+        .bg-creative {
+            background: radial-gradient(circle at top right, rgba(255, 107, 107, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.05), transparent);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4F46E5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 selection:bg-[#FF6B6B]/30">
+
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
+    <a href="../index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #FF6B6B">
+        C
+      </div>
+      <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
+        Co-Create Tech
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
+      <a href="../open-innovation-sandbox/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Open Innovation Sandbox
+      </a>
+    
+      <a href="../knowledge-synergy-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Knowledge Synergy Hub
+      </a>
+    
+      <a href="../incentive-ecosystem-engine/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Incentive Ecosystem Engine
+      </a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#" class="hidden sm:block px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200 whitespace-nowrap">
+        Contact
+      </a>
+      <button class="md:hidden p-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <i class="fa-solid fa-bars-staggered text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
+    <div class="flex flex-col gap-4">
+      <a href="../open-innovation-sandbox/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Open Innovation Sandbox
+      </a>
+    
+      <a href="../knowledge-synergy-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Knowledge Synergy Hub
+      </a>
+    
+      <a href="../incentive-ecosystem-engine/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Incentive Ecosystem Engine
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-24 pb-16 sm:pt-32 sm:pb-24">
+        <div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-[#FF6B6B]/5 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block px-4 py-2 rounded-full bg-[#FF6B6B]/10 text-[#FF6B6B] text-xs font-black tracking-widest uppercase mb-6">
+                        Limitless Playground
+                    </span>
+                    <h1 class="text-5xl sm:text-7xl font-black text-slate-900 leading-[1.1] mb-8">
+                        Unleash Your <span class="text-gradient">Radical</span> Ideas.
+                    </h1>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-10 font-medium">
+                        Open Innovation Sandboxは、既存の枠組みを超えて新しい可能性を試作するための「知の遊び場」です。ここでは失敗はデータとなり、実験は未来の種となります。
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-black hover:scale-105 transition-transform shadow-xl shadow-slate-200">
+                            Start Experimenting
+                        </a>
+                        <a href="#" class="px-8 py-4 bg-white border border-slate-200 text-slate-600 rounded-2xl font-black hover:bg-slate-50 transition-colors">
+                            View Documentation
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative z-10 glass-card p-8 rounded-3xl shadow-2xl overflow-hidden float-animation">
+                        <div class="flex gap-2 mb-6">
+                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-4 w-3/4 bg-slate-100 rounded-full"></div>
+                            <div class="h-4 w-full bg-slate-100 rounded-full"></div>
+                            <div class="h-24 w-full bg-gradient-to-br from-[#FF6B6B]/20 to-indigo-500/20 rounded-2xl border border-white/50 flex items-center justify-center">
+                                <i class="fa-solid fa-flask-vial text-4xl text-[#FF6B6B]"></i>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="h-16 bg-slate-50 rounded-xl border border-slate-100"></div>
+                                <div class="h-16 bg-slate-50 rounded-xl border border-slate-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Elements -->
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-[#FF6B6B]/20 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="py-24 bg-creative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900 mb-6">3つの実験フェーズ</h2>
+                <p class="text-slate-600 font-medium">Sandboxは、アイデアが生まれてから世界へ羽ばたくまでのプロセスを、高度な技術とコミュニティで支援します。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="group p-10 rounded-[2.5rem] bg-white border border-slate-100 hover:border-[#FF6B6B]/30 hover:shadow-2xl hover:shadow-[#FF6B6B]/5 transition-all duration-500">
+                    <div class="w-16 h-16 rounded-2xl bg-[#FF6B6B]/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-lightbulb text-2xl text-[#FF6B6B]"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-[#FF6B6B] transition-colors">Ideation</h3>
+                    <p class="text-slate-500 leading-relaxed font-medium">直感的なホワイトボードとAIアシスタントを使い、散らばった思考を形にします。</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="group p-10 rounded-[2.5rem] bg-white border border-slate-100 hover:border-indigo-500/30 hover:shadow-2xl hover:shadow-indigo-500/5 transition-all duration-500">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microchip text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-indigo-600 transition-colors">Prototyping</h3>
+                    <p class="text-slate-500 leading-relaxed font-medium">ノーコードからディープテックまで、あらゆる技術スタックを統合したプロトタイピング環境を提供。</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="group p-10 rounded-[2.5rem] bg-white border border-slate-100 hover:border-emerald-500/30 hover:shadow-2xl hover:shadow-emerald-500/5 transition-all duration-500">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-50 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-rocket text-2xl text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-emerald-600 transition-colors">Launchpad</h3>
+                    <p class="text-slate-500 leading-relaxed font-medium">実証実験の場を世界中のパートナー企業と連携し、スピーディなスケールを支援します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats/CTA Section -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-slate-900 rounded-[3rem] p-8 sm:p-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-[#FF6B6B] rounded-full blur-[100px] -translate-y-1/2"></div>
+                </div>
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <h2 class="text-3xl sm:text-5xl font-black text-white mb-8 leading-tight">
+                        あなたのひらめきを、<br><span class="text-[#FF6B6B]">世界の共感</span>に変えよう。
+                    </h2>
+                    <p class="text-slate-400 max-w-2xl mb-12 text-lg font-medium">
+                        Open Innovation Sandboxは、クリエイター、エンジニア、そして夢想家たちのための場所です。今すぐ参加して、新しいエコシステムの一部になりませんか？
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <button class="px-10 py-5 bg-[#FF6B6B] text-white rounded-2xl font-black hover:shadow-2xl hover:shadow-[#FF6B6B]/40 transition-all">
+                            Join the Sandbox
+                        </button>
+                        <button class="px-10 py-5 bg-white/10 text-white border border-white/20 rounded-2xl font-black hover:bg-white/20 transition-all">
+                            Partner with us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-slate-900 text-white py-16 px-6 mt-20">
+  <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
+    <h4 class="text-2xl font-black mb-6">Co-Create Tech</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーを通じて個人の創造性を解き放ち、心に響く共感の輪を世界に広げる。</p>
+  </div>
+  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 Co-Create Tech. Built with MySiteGen-Agent.</p>
+</footer>
+
+</body>
+</html>
