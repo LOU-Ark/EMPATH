@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive UI/UX Ecosystem | EMPATH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #1A1A1A; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fadeIn { animation: fadeIn 0.5s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-white antialiased">
+
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
+    <a href="../index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #1A1A1A">
+        E
+      </div>
+      <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
+        EMPATH
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
+      <a href="../ei-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Emotional Intelligence Core
+      </a>
+      <a href="../adaptive-ux/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap border-b-2 border-indigo-600">
+        Adaptive UI/UX Ecosystem
+      </a>
+      <a href="../enterprise-api/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Enterprise Empathy API
+      </a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#" class="hidden sm:block px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200 whitespace-nowrap">
+        Contact
+      </a>
+      <button class="md:hidden p-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <i class="fa-solid fa-bars-staggered text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
+    <div class="flex flex-col gap-4">
+      <a href="../ei-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Emotional Intelligence Core
+      </a>
+      <a href="../adaptive-ux/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Adaptive UI/UX Ecosystem
+      </a>
+      <a href="../enterprise-api/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Enterprise Empathy API
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-32">
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20 md:py-32">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-tight mb-8">
+                Interfaces that <span class="text-slate-400">feel</span>.
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed">
+                Adaptive UI/UX Ecosystemは、ユーザーの感情的な文脈をリアルタイムに理解し、動的に変化する次世代のエクスペリエンス・フレームワークです。
+            </p>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="bg-slate-50 py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-black mb-6">情緒的レスポンシブ・デザイン</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        画面サイズに応じるだけのレスポンシブから、心の状態に応じるアダプティブへ。EMPATHは、タイポグラフィ、コントラスト、インタラクションの密度をユーザーの集中度や感情曲線に合わせて自動調整します。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded bg-slate-900 flex-shrink-0 mt-1"></div>
+                            <p class="font-bold">Cognitive Load Balancing</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded bg-slate-900 flex-shrink-0 mt-1"></div>
+                            <p class="font-bold">Emotional Tone Mapping</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded bg-slate-900 flex-shrink-0 mt-1"></div>
+                            <p class="font-bold">Anticipatory Interaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-white border border-slate-200 rounded-3xl shadow-2xl overflow-hidden flex items-center justify-center p-12">
+                    <div class="relative w-full h-full flex items-center justify-center">
+                        <div class="absolute inset-0 bg-indigo-50 rounded-full animate-pulse scale-75 opacity-50"></div>
+                        <div class="w-32 h-32 bg-slate-900 rounded-2xl rotate-45 flex items-center justify-center shadow-xl z-10">
+                            <span class="text-white text-4xl font-black -rotate-45">A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="max-w-7xl mx-auto px-6 py-32">
+        <div class="text-center mb-20">
+            <h2 class="text-sm font-black uppercase tracking-widest text-indigo-600 mb-4">Core Ecosystem</h2>
+            <p class="text-4xl font-black">静的なUIからの脱却</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="p-8 border border-slate-100 rounded-2xl hover:border-slate-300 transition-all">
+                <div class="w-12 h-12 mb-6 bg-slate-100 rounded-lg flex items-center justify-center">
+                    <i class="fa-solid fa-wand-magic-sparkles text-slate-900"></i>
+                </div>
+                <h3 class="text-xl font-black mb-4">Visual Fluidity</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-medium">
+                    感情の状態に基づき、色彩設計やモーショングラフィックスをリアルタイムに生成。ストレスを感じている時には鎮静効果のあるUIへ。
+                </p>
+            </div>
+            <div class="p-8 border border-slate-100 rounded-2xl hover:border-slate-300 transition-all">
+                <div class="w-12 h-12 mb-6 bg-slate-100 rounded-lg flex items-center justify-center">
+                    <i class="fa-solid fa-microchip text-slate-900"></i>
+                </div>
+                <h3 class="text-xl font-black mb-4">Contextual Logic</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-medium">
+                    ユーザーの意図を先回りするナッジ設計。迷いや不安を検知し、最適なタイミングでサポート機能を提供します。
+                </p>
+            </div>
+            <div class="p-8 border border-slate-100 rounded-2xl hover:border-slate-300 transition-all">
+                <div class="w-12 h-12 mb-6 bg-slate-100 rounded-lg flex items-center justify-center">
+                    <i class="fa-solid fa-shield-heart text-slate-900"></i>
+                </div>
+                <h3 class="text-xl font-black mb-4">Empathetic UX</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-medium">
+                    プライバシーを最優先に考えたオンデバイス感情解析。データはローカルで処理され、共感のみが体験に還元されます。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="max-w-7xl mx-auto px-6 mb-20">
+        <div class="bg-slate-900 rounded-[3rem] p-12 md:p-24 text-center text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-8">体験を、呼吸させる。</h2>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">
+                私たちのエコシステムは、あらゆるデジタル・プロダクトに「共感」という新しい次元を追加します。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="px-8 py-4 bg-white text-slate-900 font-black rounded-full hover:bg-indigo-500 hover:text-white transition-all">
+                    ドキュメントを見る
+                </a>
+                <a href="#" class="px-8 py-4 border border-white/20 text-white font-black rounded-full hover:bg-white/10 transition-all">
+                    デモを予約
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-slate-900 text-white py-16 px-6 mt-20">
+  <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
+    <h4 class="text-2xl font-black mb-6">EMPATH</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーを通じて、人間の創造性と共感を最大化する。</p>
+  </div>
+  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 EMPATH. Built with MySiteGen-Agent.</p>
+</footer>
+
+</body>
+</html>
