@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Synergy Hub | Co-Create Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        .bg-synergy { background-color: #FF6B6B; }
+        .text-synergy { color: #FF6B6B; }
+        .border-synergy { border-color: #FF6B6B; }
+        .glow-synergy { box-shadow: 0 0 20px rgba(255, 107, 107, 0.3); }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
+    <a href="../index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #FF6B6B">
+        C
+      </div>
+      <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
+        Co-Create Tech
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
+      <a href="../open-innovation-sandbox/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Open Innovation Sandbox
+      </a>
+    
+      <a href="../knowledge-synergy-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Knowledge Synergy Hub
+      </a>
+    
+      <a href="../incentive-ecosystem-engine/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Incentive Ecosystem Engine
+      </a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#" class="hidden sm:block px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200 whitespace-nowrap">
+        Contact
+      </a>
+      <button class="md:hidden p-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <i class="fa-solid fa-bars-staggered text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
+    <div class="flex flex-col gap-4">
+      <a href="../open-innovation-sandbox/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Open Innovation Sandbox
+      </a>
+    
+      <a href="../knowledge-synergy-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Knowledge Synergy Hub
+      </a>
+    
+      <a href="../incentive-ecosystem-engine/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Incentive Ecosystem Engine
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-32 overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#FF6B6B]/10 to-transparent -z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FF6B6B]/10 border border-[#FF6B6B]/20 text-[#FF6B6B] text-xs font-black tracking-widest uppercase">
+                    Knowledge Synergy Hub
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-black text-slate-900 leading-tight">
+                    知恵を繋ぎ、<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B6B] to-orange-400">創造を加速する。</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-xl font-medium">
+                    バラバラに存在するアイデアや知見を、一つのハブに集約。AIとコミュニティの力で新たなシナジーを創出し、個人の「気づき」を社会の「価値」へと変換します。
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-black hover:scale-105 transition-transform shadow-xl shadow-slate-200">
+                        ハブに参加する
+                    </a>
+                    <a href="#" class="px-8 py-4 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl font-black hover:bg-slate-50 transition-colors">
+                        詳細を見る
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full aspect-square bg-white rounded-[3rem] shadow-2xl relative overflow-hidden animate-float">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-3/4 h-3/4 border-2 border-dashed border-[#FF6B6B]/30 rounded-full animate-[spin_20s_linear_infinite]"></div>
+                        <div class="absolute w-32 h-32 bg-synergy rounded-3xl rotate-12 opacity-20 blur-2xl"></div>
+                        <div class="relative grid grid-cols-2 gap-4 p-8">
+                            <div class="p-6 bg-white shadow-xl rounded-2xl border border-slate-50 flex flex-col items-center">
+                                <i class="fa-solid fa-brain text-3xl text-synergy mb-3"></i>
+                                <span class="text-[10px] font-black uppercase text-slate-400">Insight</span>
+                            </div>
+                            <div class="p-6 bg-white shadow-xl rounded-2xl border border-slate-50 flex flex-col items-center mt-8">
+                                <i class="fa-solid fa-link text-3xl text-blue-500 mb-3"></i>
+                                <span class="text-[10px] font-black uppercase text-slate-400">Connect</span>
+                            </div>
+                            <div class="p-6 bg-white shadow-xl rounded-2xl border border-slate-50 flex flex-col items-center -mt-4">
+                                <i class="fa-solid fa-bolt text-3xl text-orange-400 mb-3"></i>
+                                <span class="text-[10px] font-black uppercase text-slate-400">Energy</span>
+                            </div>
+                            <div class="p-6 bg-white shadow-xl rounded-2xl border border-slate-50 flex flex-col items-center mt-4">
+                                <i class="fa-solid fa-seedling text-3xl text-emerald-500 mb-3"></i>
+                                <span class="text-[10px] font-black uppercase text-slate-400">Growth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating badges -->
+                <div class="absolute -top-4 -right-4 bg-white p-4 rounded-2xl shadow-lg border border-slate-50 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-black text-slate-800">New Synergy!</p>
+                        <p class="text-[10px] text-slate-400">Collaboration detected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concepts Section -->
+    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-3xl lg:text-5xl font-black mb-6">知識の連鎖が、<br class="sm:hidden">未来を書き換える。</h2>
+                <p class="text-slate-400 font-medium">Knowledge Synergy Hubは、単なるアーカイブではありません。それは生きている知識の生態系です。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group">
+                    <div class="w-16 h-16 rounded-2xl bg-synergy/20 flex items-center justify-center text-synergy mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microchip text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">AIセマンティック検索</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-medium">言葉の表面的な一致だけでなく、文脈や意図を理解するAIが、あなたのプロジェクトに最適な知見を世界中から掘り起こします。</p>
+                </div>
+                <div class="p-10 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-500/20 flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-viewfinder text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">クロス・ドメイン結合</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-medium">異業種・異分野のアイデアを意図的に衝突させ、予期せぬイノベーション（セレンディピティ）を誘発する独自のアルゴリズムを搭載。</p>
+                </div>
+                <div class="p-10 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group">
+                    <div class="w-16 h-16 rounded-2xl bg-orange-400/20 flex items-center justify-center text-orange-400 mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">知的貢献の可視化</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-medium">あなたの知識が誰の役に立ち、どのようなプロジェクトに影響を与えたかをグラフ化。貢献度に応じたインセンティブ設計も完備。</p>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative background text -->
+        <div class="absolute bottom-0 left-0 text-[15rem] font-black text-white/[0.02] select-none pointer-events-none whitespace-nowrap -mb-20">
+            SYNERGY HUB
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto rounded-[3rem] bg-gradient-to-br from-indigo-600 to-violet-700 p-12 lg:p-20 text-center relative overflow-hidden shadow-2xl">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+            </div>
+            <div class="relative z-10">
+                <h2 class="text-3xl lg:text-5xl font-black text-white mb-8">
+                    あなたの知見が、<br>誰かの発明の欠片になる。
+                </h2>
+                <p class="text-white/80 mb-12 max-w-2xl mx-auto font-medium">
+                    個人の知識を社会の共有財産へ。Knowledge Synergy Hubで、次世代の共創に参加しましょう。
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <input type="email" placeholder="メールアドレスを入力" class="px-8 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:bg-white focus:text-slate-900 transition-all min-w-[300px]">
+                    <button class="px-8 py-4 bg-white text-indigo-600 rounded-2xl font-black hover:scale-105 transition-transform shadow-xl">
+                        無料で始める
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-slate-900 text-white py-16 px-6 mt-20">
+  <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
+    <h4 class="text-2xl font-black mb-6">Co-Create Tech</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーを通じて個人の創造性を解き放ち、心に響く共感の輪を世界に広げる。</p>
+  </div>
+  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 Co-Create Tech. Built with MySiteGen-Agent.</p>
+</footer>
+
+<script>
+    // Smooth scroll for internal links if needed
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
