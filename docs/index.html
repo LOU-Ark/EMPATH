@@ -3,65 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>エトス・アンド・エコー | Ethos & Echo</title>
+    <title>灯火 - TOMOSHIBI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
-            overflow-x: hidden;
+        body { font-family: 'Inter', 'Noto+Sans+JP', sans-serif; }
+        .bg-vivid-gradient {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF9E7D 100%);
         }
-        .text-gradient {
-            background: linear-gradient(135deg, #7C3AED 0%, #C084FC 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 107, 53, 0.4);
         }
-        .bg-mesh {
-            background-color: #ffffff;
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.05) 0px, transparent 50%),
-                radial-gradient(at 100% 0%, rgba(192, 132, 252, 0.05) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(124, 58, 237, 0.05) 0px, transparent 50%),
-                radial-gradient(at 0% 100%, rgba(192, 132, 252, 0.05) 0px, transparent 50%);
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
     </style>
 </head>
-<body class="bg-mesh text-slate-900">
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
 
 <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
     <a href="./index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
-      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #7C3AED">
-        エ
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #FF6B35">
+        灯
       </div>
       <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
-        エトス・アンド・エコー
+        灯火 - TOMOSHIBI
       </span>
     </a>
     <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
-      <a href="./ethos-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        信頼の源泉：エトス・コア
+      <a href="./dialogue-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        対話の灯火 (Dialogue Hub)
       </a>
     
-      <a href="./echo-resonance/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        共鳴の場：エコー・チャンバー
+      <a href="./wisdom-archive/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        知恵の継承 (Knowledge Hub)
       </a>
     
-      <a href="./synthesis-lab/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        価値の拡張：シンセシス・ラボ
+      <a href="./mental-tuning/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        心の調律 (Wellness Hub)
       </a>
     </nav>
     <div class="flex items-center gap-3">
@@ -75,16 +58,16 @@
   </div>
   <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
     <div class="flex flex-col gap-4">
-      <a href="./ethos-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        信頼の源泉：エトス・コア
+      <a href="./dialogue-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        対話の灯火 (Dialogue Hub)
       </a>
     
-      <a href="./echo-resonance/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        共鳴の場：エコー・チャンバー
+      <a href="./wisdom-archive/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        知恵の継承 (Knowledge Hub)
       </a>
     
-      <a href="./synthesis-lab/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        価値の拡張：シンセシス・ラボ
+      <a href="./mental-tuning/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        心の調律 (Wellness Hub)
       </a>
     </div>
   </div>
@@ -92,138 +75,118 @@
 
 <main class="pt-20">
     <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-6">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 2s"></div>
+    <section class="relative py-20 lg:py-32 px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-[#FF6B35] rounded-full blur-[120px] animate-pulse"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500 rounded-full blur-[120px] animate-pulse"></div>
         </div>
         
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest text-indigo-600 bg-indigo-50 rounded-full">CREATIVE SYNERGY</span>
-            <h1 class="text-5xl md:text-8xl font-black mb-8 tracking-tighter leading-none">
-                共鳴する意志、<br><span class="text-gradient">拡張する価値。</span>
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest uppercase bg-orange-100 text-[#FF6B35] rounded-full">
+                Illuminate the Connection
+            </span>
+            <h1 class="text-5xl md:text-8xl font-black text-slate-900 leading-tight mb-8 tracking-tighter animate-fadeIn">
+                暗闇に、<br class="hidden sm:block">
+                <span class="text-[#FF6B35] text-glow italic">真の繋がり</span>の灯を。
             </h1>
-            <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed mb-10">
-                私たちは、揺るぎない「エトス（信頼）」を核に、<br class="hidden sm:block">
-                社会との「エコー（共鳴）」を生み出し、新たな価値を創造します。
+            <p class="max-w-2xl mx-auto text-lg md:text-xl font-bold text-slate-600 leading-relaxed mb-12 animate-fadeIn" style="animation-delay: 0.1s">
+                孤独を孤立にさせない。分断された社会を繋ぎ直し、<br class="hidden sm:block">誰もが自分らしく輝ける場所を私たちは創造します。
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#vision" class="px-8 py-4 bg-slate-900 text-white font-bold rounded-2xl hover:bg-indigo-600 transition-all shadow-xl hover:-translate-y-1">
-                    コンセプトを体感する
-                </a>
-                <a href="#lab" class="px-8 py-4 bg-white border border-slate-200 text-slate-900 font-bold rounded-2xl hover:bg-slate-50 transition-all shadow-sm">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fadeIn" style="animation-delay: 0.2s">
+                <a href="#hubs" class="px-10 py-5 bg-[#FF6B35] text-white font-black rounded-2xl shadow-2xl shadow-orange-200 hover:scale-105 hover:bg-[#e85a24] transition-all text-center">
                     プロジェクトを見る
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Sections Grid -->
-    <section id="vision" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Ethos Core -->
-            <div class="group p-10 bg-white border border-slate-100 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <div class="w-16 h-16 mb-8 rounded-2xl bg-indigo-50 flex items-center justify-center text-[#7C3AED] text-3xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
-                    <i class="fa-solid fa-shield-heart"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-4 tracking-tight">信頼の源泉：<br>エトス・コア</h3>
-                <p class="text-slate-500 font-medium leading-relaxed mb-6">すべての創造の基盤となるのは「真実」です。透明性の高い対話を通じて、揺るぎない信頼のプロトコルを構築します。</p>
-                <a href="./ethos-core/index.html" class="inline-flex items-center text-[#7C3AED] font-bold gap-2 group/link">
-                    Explore Core <i class="fa-solid fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-
-            <!-- Echo Resonance -->
-            <div class="group p-10 bg-white border border-slate-100 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <div class="w-16 h-16 mb-8 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 text-3xl group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                    <i class="fa-solid fa-tower-broadcast"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-4 tracking-tight">共鳴の場：<br>エコー・チャンバー</h3>
-                <p class="text-slate-500 font-medium leading-relaxed mb-6">個人のアイデアは、他者と共鳴することで波紋のように広がります。対話から生まれる純粋なバイブレーションを可視化します。</p>
-                <a href="./echo-resonance/index.html" class="inline-flex items-center text-purple-600 font-bold gap-2 group/link">
-                    Enter Chamber <i class="fa-solid fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-
-            <!-- Synthesis Lab -->
-            <div id="lab" class="group p-10 bg-white border border-slate-100 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <div class="w-16 h-16 mb-8 rounded-2xl bg-pink-50 flex items-center justify-center text-pink-600 text-3xl group-hover:bg-pink-600 group-hover:text-white transition-colors">
-                    <i class="fa-solid fa-flask-vial"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-4 tracking-tight">価値の拡張：<br>シンセシス・ラボ</h3>
-                <p class="text-slate-500 font-medium leading-relaxed mb-6">信頼と共鳴を掛け合わせ、未知のソリューションへと昇華させます。テクノロジーとアートが融合する最前線の実験場です。</p>
-                <a href="./synthesis-lab/index.html" class="inline-flex items-center text-pink-600 font-bold gap-2 group/link">
-                    Open Lab <i class="fa-solid fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
+                <a href="#" class="px-10 py-5 bg-white text-slate-900 border-2 border-slate-100 font-black rounded-2xl shadow-sm hover:border-indigo-600 hover:text-indigo-600 transition-all text-center">
+                    灯火について
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Narrative Section -->
-    <section class="py-24 bg-slate-900 text-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter leading-tight">
-                    テクノロジーは、<br>
-                    <span class="text-indigo-400">心拍数</span>を高めるために。
-                </h2>
-                <p class="text-slate-400 text-lg leading-relaxed mb-8">
-                    私たちはただコードを書くのではありません。ただデザインを描くのでもありません。
-                    そこに魂（エトス）を込め、社会に響く（エコー）物語を設計します。
-                    冷たい機械の論理に、人間のぬくもりを。
-                </p>
-                <div class="flex items-center gap-6">
-                    <div class="flex -space-x-3">
-                        <div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-slate-700"></div>
-                        <div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-indigo-500"></div>
-                        <div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-purple-500"></div>
-                    </div>
-                    <p class="text-sm font-bold text-slate-300">Join our visionaries</p>
+    <!-- Hubs Section -->
+    <section id="hubs" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">3つの灯火</h2>
+                    <p class="font-bold text-slate-500">私たちが展開する、社会を変えるための3つのアプローチ。</p>
                 </div>
+                <div class="text-[#FF6B35] font-black text-6xl opacity-20 hidden md:block">SERVICES</div>
             </div>
-            <div class="relative">
-                <div class="aspect-square rounded-[4rem] bg-gradient-to-tr from-[#7C3AED] to-pink-500 p-1">
-                    <div class="w-full h-full rounded-[3.8rem] bg-slate-900 flex items-center justify-center overflow-hidden">
-                        <div class="relative flex items-center justify-center w-full h-full">
-                            <div class="absolute w-40 h-40 bg-indigo-600/20 rounded-full animate-ping"></div>
-                            <div class="absolute w-60 h-60 border border-indigo-500/30 rounded-full"></div>
-                            <div class="absolute w-80 h-80 border border-indigo-500/10 rounded-full"></div>
-                            <span class="text-8xl font-black opacity-10">E&E</span>
-                        </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Dialogue Hub -->
+                <a href="./dialogue-hub/index.html" class="group relative p-10 rounded-3xl bg-slate-50 border border-slate-100 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform"></div>
+                    <div class="w-16 h-16 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-indigo-100">
+                        <i class="fa-solid fa-comments text-2xl"></i>
                     </div>
-                </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-indigo-600 transition-colors">対話の灯火</h3>
+                    <p class="text-slate-600 font-bold text-sm leading-relaxed">
+                        心の内側を言葉にし、他者と共鳴する。分断を越えた深い対話のプラットフォーム。
+                    </p>
+                    <div class="mt-8 flex items-center font-black text-xs text-indigo-600 uppercase tracking-widest">
+                        Dialogue Hub <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </a>
+
+                <!-- Knowledge Hub -->
+                <a href="./wisdom-archive/index.html" class="group relative p-10 rounded-3xl bg-slate-900 text-white overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#FF6B35]/20 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform"></div>
+                    <div class="w-16 h-16 bg-[#FF6B35] text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-orange-900/40">
+                        <i class="fa-solid fa-book-open text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">知恵の継承</h3>
+                    <p class="text-slate-400 font-bold text-sm leading-relaxed">
+                        先人の知恵を現代に繋ぎ、次世代の羅針盤となるナレッジアーカイブ。
+                    </p>
+                    <div class="mt-8 flex items-center font-black text-xs text-[#FF6B35] uppercase tracking-widest">
+                        Knowledge Hub <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </a>
+
+                <!-- Wellness Hub -->
+                <a href="./mental-tuning/index.html" class="group relative p-10 rounded-3xl bg-slate-50 border border-slate-100 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform"></div>
+                    <div class="w-16 h-16 bg-emerald-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-emerald-100">
+                        <i class="fa-solid fa-heart-pulse text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-emerald-600 transition-colors">心の調律</h3>
+                    <p class="text-slate-600 font-bold text-sm leading-relaxed">
+                        日々を健やかに生きるためのセルフケアとマインドフルネスの空間。
+                    </p>
+                    <div class="mt-8 flex items-center font-black text-xs text-emerald-600 uppercase tracking-widest">
+                        Wellness Hub <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </a>
             </div>
+        </div>
+    </section>
+
+    <!-- Mission Message -->
+    <section class="py-24 px-6 bg-vivid-gradient text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-6xl font-black mb-10 leading-tight">
+                「個」として立ち、<br>
+                「全」として繋がる。
+            </h2>
+            <p class="text-xl md:text-2xl font-bold opacity-90 leading-relaxed mb-12">
+                私たちは、テクノロジーと人間性の融合により、<br class="hidden sm:block">
+                誰もが孤立することなく、自分の価値を再発見できる<br class="hidden sm:block">
+                新しい社会のインフラを構築します。
+            </p>
+            <div class="w-20 h-1 bg-white mx-auto rounded-full"></div>
         </div>
     </section>
 </main>
 
 <footer class="bg-slate-900 text-white py-16 px-6 mt-20">
   <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
-    <h4 class="text-2xl font-black mb-6">エトス・アンド・エコー</h4>
-    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーは人間の創造性を拡張し、共感を生むためのツールであるべきだ。</p>
+    <h4 class="text-2xl font-black mb-6">灯火 - TOMOSHIBI</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">孤独を孤立にさせず、分断された社会に「真の繋がり」の灯を灯し、誰もが自分の居場所を誇れる世界を築く。</p>
   </div>
-  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 エトス・アンド・エコー. Built with MySiteGen-Agent.</p>
+  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 灯火 - TOMOSHIBI. Built with MySiteGen-Agent.</p>
 </footer>
-
-<script>
-    // Add simple scroll animation class handling if needed
-    document.addEventListener('DOMContentLoaded', () => {
-        const observerOptions = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.group').forEach(el => {
-            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
-            observer.observe(el);
-        });
-    });
-</script>
 
 </body>
 </html>
