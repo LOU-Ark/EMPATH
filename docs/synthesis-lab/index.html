@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>価値の拡張：シンセシス・ラボ | エトス・アンド・エコー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        .bg-mesh {
+            background-color: #ffffff;
+            background-image: radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.1) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(124, 58, 237, 0.05) 0px, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 4s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-mesh text-slate-900 overflow-x-hidden">
+
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
+    <a href="../index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #7C3AED">
+        エ
+      </div>
+      <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
+        エトス・アンド・エコー
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
+      <a href="../ethos-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        信頼の源泉：エトス・コア
+      </a>
+    
+      <a href="../echo-resonance/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        共鳴の場：エコー・チャンバー
+      </a>
+    
+      <a href="../synthesis-lab/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        価値の拡張：シンセシス・ラボ
+      </a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#" class="hidden sm:block px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200 whitespace-nowrap">
+        Contact
+      </a>
+      <button class="md:hidden p-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <i class="fa-solid fa-bars-staggered text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
+    <div class="flex flex-col gap-4">
+      <a href="../ethos-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        信頼の源泉：エトス・コア
+      </a>
+    
+      <a href="../echo-resonance/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        共鳴の場：エコー・チャンバー
+      </a>
+    
+      <a href="../synthesis-lab/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        価値の拡張：シンセシス・ラボ
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative py-24 sm:py-32 overflow-hidden">
+        <div class="absolute top-0 right-0 -z-10 w-1/2 h-full opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="40" stroke="#7C3AED" stroke-width="0.5" stroke-dasharray="2 2" />
+                <circle cx="50" cy="50" r="30" stroke="#7C3AED" stroke-width="0.5" />
+                <path d="M50 10 L50 90 M10 50 L90 50" stroke="#7C3AED" stroke-width="0.2" />
+            </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7C3AED]/10 text-[#7C3AED] text-xs font-bold mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#7C3AED] opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#7C3AED]"></span>
+                    </span>
+                    SYNTHESIS LAB
+                </div>
+                <h1 class="text-5xl sm:text-7xl font-black tracking-tighter leading-tight mb-8">
+                    未知の文脈を<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-indigo-400">「価値」へ変換する。</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-600 leading-relaxed font-medium mb-10">
+                    シンセシス・ラボは、断片化された情報や技術を独自の視点で統合し、新たな意味を創造する実験場です。私たちは、既存の枠組みを超えた「価値の拡張」を追求します。
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#lab-vision" class="px-8 py-4 bg-[#7C3AED] text-white rounded-2xl font-black shadow-xl shadow-indigo-200 hover:translate-y-[-2px] transition-all">
+                        探求を開始する
+                    </a>
+                    <a href="#projects" class="px-8 py-4 bg-white border border-slate-200 text-slate-800 rounded-2xl font-black hover:bg-slate-50 transition-all">
+                        実験成果を見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Philosophy -->
+    <section id="lab-vision" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm text-2xl">🧪</div>
+                    <h3 class="text-xl font-black italic">Synthesis: 統合</h3>
+                    <p class="text-slate-600 text-sm leading-loose">
+                        異なる領域の専門知識を掛け合わせ、単一の分野では成し得なかった解を導き出します。
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm text-2xl">⚡</div>
+                    <h3 class="text-xl font-black italic">Expansion: 拡張</h3>
+                    <p class="text-slate-600 text-sm leading-loose">
+                        技術を単なる効率化の手段に留めず、人間の感性や可能性を広げるための触媒へと昇華させます。
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm text-2xl">🌌</div>
+                    <h3 class="text-xl font-black italic">Context: 文脈</h3>
+                    <p class="text-slate-600 text-sm leading-loose">
+                        事象の背後にある物語を読み解き、現代において最も求められる「意味のある体験」を構築します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Grid (Creative Showcase) -->
+    <section id="projects" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-4xl font-black mb-4">Experimental Projects</h2>
+                    <p class="text-slate-500 font-bold uppercase tracking-widest text-sm">現在進行中の実験</p>
+                </div>
+                <div class="text-[#7C3AED] font-black group cursor-pointer flex items-center gap-2">
+                    View Archive <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 01 -->
+                <div class="group relative overflow-hidden rounded-3xl bg-slate-100 aspect-[4/3] md:aspect-auto md:h-[500px]">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=1200" alt="UI synthesis" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 p-8 z-20">
+                        <span class="text-xs font-black text-[#7C3AED] bg-white px-3 py-1 rounded-full mb-4 inline-block">Lab-001</span>
+                        <h4 class="text-3xl font-black text-white mb-2 tracking-tight">感性アルゴリズムの探求</h4>
+                        <p class="text-white/70 text-sm font-medium">感情データを視覚化し、空間デザインに還元する実験的インターフェース。</p>
+                    </div>
+                </div>
+                <!-- Project 02 -->
+                <div class="group relative overflow-hidden rounded-3xl bg-slate-100 aspect-[4/3] md:aspect-auto md:h-[500px]">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200" alt="Security Echo" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 p-8 z-20">
+                        <span class="text-xs font-black text-[#7C3AED] bg-white px-3 py-1 rounded-full mb-4 inline-block">Lab-002</span>
+                        <h4 class="text-3xl font-black text-white mb-2 tracking-tight">メタ・デジタル・アイデンティティ</h4>
+                        <p class="text-white/70 text-sm font-medium">分散型ID（DID）が織りなす新しい信頼のネットワーク構造を再定義。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab CTA -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto rounded-[3rem] p-8 sm:p-20 text-center relative overflow-hidden shadow-2xl shadow-indigo-200" style="background-color: #7C3AED">
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                <div class="absolute -top-1/2 -left-1/4 w-[200%] h-[200%] opacity-20 bg-[radial-gradient(circle,white_0%,transparent_70%)]"></div>
+            </div>
+            <div class="relative z-10">
+                <h2 class="text-3xl sm:text-5xl font-black text-white mb-8 tracking-tighter leading-tight">
+                    あなたのアイデアを、<br>ラボで合成しませんか？
+                </h2>
+                <p class="text-indigo-100 text-lg mb-12 max-w-2xl mx-auto font-medium">
+                    新しいプロジェクト、共同研究、あるいは形にならないインスピレーション。シンセシス・ラボはいつでも開かれています。
+                </p>
+                <a href="#" class="inline-block px-10 py-5 bg-white text-[#7C3AED] rounded-full font-black text-lg hover:bg-slate-900 hover:text-white transition-all transform hover:scale-105">
+                    実験を共同で開始する
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-slate-900 text-white py-16 px-6 mt-20">
+  <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
+    <h4 class="text-2xl font-black mb-6">エトス・アンド・エコー</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーは人間の創造性を拡張し、共感を生むためのツールであるべきだ。</p>
+  </div>
+  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 エトス・アンド・エコー. Built with MySiteGen-Agent.</p>
+</footer>
+
+</body>
+</html>
