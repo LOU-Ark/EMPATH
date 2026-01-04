@@ -3,58 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Co-Create Tech</title>
+    <title>エトス・アンド・エコー | Ethos & Echo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif; }
-        .bg-gradient-mesh {
-            background-color: #ffffff;
-            background-image: radial-gradient(at 0% 0%, rgba(255, 107, 107, 0.1) 0, transparent 50%),
-                              radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.1) 0, transparent 50%);
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+            overflow-x: hidden;
         }
         .text-gradient {
-            background: linear-gradient(135deg, #FF6B6B 0%, #6366F1 100%);
+            background: linear-gradient(135deg, #7C3AED 0%, #C084FC 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .blob-animate {
-            animation: blob 7s infinite;
+        .bg-mesh {
+            background-color: #ffffff;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(192, 132, 252, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(124, 58, 237, 0.05) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(192, 132, 252, 0.05) 0px, transparent 50%);
         }
-        @keyframes blob {
-            0% { transform: translate(0px, 0px) scale(1); }
-            33% { transform: translate(30px, -50px) scale(1.1); }
-            66% { transform: translate(-20px, 20px) scale(0.9); }
-            100% { transform: translate(0px, 0px) scale(1); }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
         }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-gradient-mesh text-slate-900">
+<body class="bg-mesh text-slate-900">
 
 <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
     <a href="./index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
-      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #FF6B6B">
-        C
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #7C3AED">
+        エ
       </div>
       <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
-        Co-Create Tech
+        エトス・アンド・エコー
       </span>
     </a>
     <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
-      <a href="./open-innovation-sandbox/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        Open Innovation Sandbox
+      <a href="./ethos-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        信頼の源泉：エトス・コア
       </a>
     
-      <a href="./knowledge-synergy-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        Knowledge Synergy Hub
+      <a href="./echo-resonance/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        共鳴の場：エコー・チャンバー
       </a>
     
-      <a href="./incentive-ecosystem-engine/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        Incentive Ecosystem Engine
+      <a href="./synthesis-lab/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        価値の拡張：シンセシス・ラボ
       </a>
     </nav>
     <div class="flex items-center gap-3">
@@ -68,117 +75,122 @@
   </div>
   <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
     <div class="flex flex-col gap-4">
-      <a href="./open-innovation-sandbox/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        Open Innovation Sandbox
+      <a href="./ethos-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        信頼の源泉：エトス・コア
       </a>
     
-      <a href="./knowledge-synergy-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        Knowledge Synergy Hub
+      <a href="./echo-resonance/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        共鳴の場：エコー・チャンバー
       </a>
     
-      <a href="./incentive-ecosystem-engine/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        Incentive Ecosystem Engine
+      <a href="./synthesis-lab/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        価値の拡張：シンセシス・ラボ
       </a>
     </div>
   </div>
 </header>
 
-<main class="pt-32">
+<main class="pt-20">
     <!-- Hero Section -->
-    <section class="relative max-w-7xl mx-auto px-6 mb-24 overflow-hidden">
-        <div class="absolute -top-20 -left-20 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 blob-animate"></div>
-        <div class="absolute -bottom-20 -right-20 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 blob-animate" style="animation-delay: 2s;"></div>
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-6">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 2s"></div>
+        </div>
         
-        <div class="relative text-center">
-            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest text-white uppercase rounded-full" style="background-color: #FF6B6B">
-                Creative Collaboration Platform
-            </span>
-            <h1 class="text-5xl md:text-8xl font-black tracking-tighter mb-8 leading-tight">
-                共創で、<br><span class="text-gradient">未踏の景色</span>を描く。
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest text-indigo-600 bg-indigo-50 rounded-full">CREATIVE SYNERGY</span>
+            <h1 class="text-5xl md:text-8xl font-black mb-8 tracking-tighter leading-none">
+                共鳴する意志、<br><span class="text-gradient">拡張する価値。</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed mb-10">
-                Co-Create Techは、テクノロジーの力を信じるすべてのクリエイターが、
-                領域を越えて交差し、新しい価値を社会に実装するための共創基盤です。
+            <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed mb-10">
+                私たちは、揺るぎない「エトス（信頼）」を核に、<br class="hidden sm:block">
+                社会との「エコー（共鳴）」を生み出し、新たな価値を創造します。
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#solutions" class="px-8 py-4 bg-slate-900 text-white font-black rounded-2xl hover:scale-105 transition-transform shadow-xl">
-                    ソリューションを見る
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#vision" class="px-8 py-4 bg-slate-900 text-white font-bold rounded-2xl hover:bg-indigo-600 transition-all shadow-xl hover:-translate-y-1">
+                    コンセプトを体感する
                 </a>
-                <a href="#" class="px-8 py-4 bg-white text-slate-900 font-black rounded-2xl border border-slate-200 hover:bg-slate-50 transition-colors">
-                    ビジョンを詳しく
+                <a href="#lab" class="px-8 py-4 bg-white border border-slate-200 text-slate-900 font-bold rounded-2xl hover:bg-slate-50 transition-all shadow-sm">
+                    プロジェクトを見る
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Core Services -->
-    <section id="solutions" class="max-w-7xl mx-auto px-6 py-20">
+    <!-- Core Sections Grid -->
+    <section id="vision" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Sandbox -->
-            <div class="group p-8 bg-white rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50 hover:border-indigo-100 transition-all duration-500">
-                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 bg-indigo-50 group-hover:scale-110 transition-transform duration-500">
-                    <i class="fa-solid fa-vial-circle-check text-2xl text-indigo-600"></i>
+            <!-- Ethos Core -->
+            <div class="group p-10 bg-white border border-slate-100 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 mb-8 rounded-2xl bg-indigo-50 flex items-center justify-center text-[#7C3AED] text-3xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-shield-heart"></i>
                 </div>
-                <h3 class="text-2xl font-black mb-4 group-hover:text-indigo-600 transition-colors">Open Innovation Sandbox</h3>
-                <p class="text-slate-500 font-medium leading-relaxed mb-6">
-                    アイデアを即座にプロトタイプ化し、検証できる実験場。オープンな環境で、予測不可能なシナジーを誘発します。
-                </p>
-                <a href="./open-innovation-sandbox/index.html" class="inline-flex items-center font-black text-sm text-slate-800 hover:gap-3 transition-all">
-                    VIEW DETAILS <i class="fa-solid fa-arrow-right ml-2 text-[#FF6B6B]"></i>
+                <h3 class="text-2xl font-black mb-4 tracking-tight">信頼の源泉：<br>エトス・コア</h3>
+                <p class="text-slate-500 font-medium leading-relaxed mb-6">すべての創造の基盤となるのは「真実」です。透明性の高い対話を通じて、揺るぎない信頼のプロトコルを構築します。</p>
+                <a href="./ethos-core/index.html" class="inline-flex items-center text-[#7C3AED] font-bold gap-2 group/link">
+                    Explore Core <i class="fa-solid fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
                 </a>
             </div>
 
-            <!-- Hub -->
-            <div class="group p-8 bg-white rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50 hover:border-[#FF6B6B]/20 transition-all duration-500">
-                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 bg-orange-50 group-hover:scale-110 transition-transform duration-500">
-                    <i class="fa-solid fa-network-wired text-2xl" style="color: #FF6B6B"></i>
+            <!-- Echo Resonance -->
+            <div class="group p-10 bg-white border border-slate-100 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 mb-8 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 text-3xl group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-tower-broadcast"></i>
                 </div>
-                <h3 class="text-2xl font-black mb-4 group-hover:text-[#FF6B6B] transition-colors">Knowledge Synergy Hub</h3>
-                <p class="text-slate-500 font-medium leading-relaxed mb-6">
-                    分散した知を統合し、新たな洞察を生む知のハブ。専門性の壁を超え、集合知を最大の武器へと変貌させます。
-                </p>
-                <a href="./knowledge-synergy-hub/index.html" class="inline-flex items-center font-black text-sm text-slate-800 hover:gap-3 transition-all">
-                    VIEW DETAILS <i class="fa-solid fa-arrow-right ml-2 text-[#FF6B6B]"></i>
+                <h3 class="text-2xl font-black mb-4 tracking-tight">共鳴の場：<br>エコー・チャンバー</h3>
+                <p class="text-slate-500 font-medium leading-relaxed mb-6">個人のアイデアは、他者と共鳴することで波紋のように広がります。対話から生まれる純粋なバイブレーションを可視化します。</p>
+                <a href="./echo-resonance/index.html" class="inline-flex items-center text-purple-600 font-bold gap-2 group/link">
+                    Enter Chamber <i class="fa-solid fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
                 </a>
             </div>
 
-            <!-- Engine -->
-            <div class="group p-8 bg-white rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50 hover:border-emerald-100 transition-all duration-500">
-                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 bg-emerald-50 group-hover:scale-110 transition-transform duration-500">
-                    <i class="fa-solid fa-rocket text-2xl text-emerald-600"></i>
+            <!-- Synthesis Lab -->
+            <div id="lab" class="group p-10 bg-white border border-slate-100 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 mb-8 rounded-2xl bg-pink-50 flex items-center justify-center text-pink-600 text-3xl group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-flask-vial"></i>
                 </div>
-                <h3 class="text-2xl font-black mb-4 group-hover:text-emerald-600 transition-colors">Incentive Ecosystem Engine</h3>
-                <p class="text-slate-500 font-medium leading-relaxed mb-6">
-                    貢献を可視化し、持続的な成長を加速させる独自のインセンティブ設計。共創のエネルギーを循環させます。
-                </p>
-                <a href="./incentive-ecosystem-engine/index.html" class="inline-flex items-center font-black text-sm text-slate-800 hover:gap-3 transition-all">
-                    VIEW DETAILS <i class="fa-solid fa-arrow-right ml-2 text-[#FF6B6B]"></i>
+                <h3 class="text-2xl font-black mb-4 tracking-tight">価値の拡張：<br>シンセシス・ラボ</h3>
+                <p class="text-slate-500 font-medium leading-relaxed mb-6">信頼と共鳴を掛け合わせ、未知のソリューションへと昇華させます。テクノロジーとアートが融合する最前線の実験場です。</p>
+                <a href="./synthesis-lab/index.html" class="inline-flex items-center text-pink-600 font-bold gap-2 group/link">
+                    Open Lab <i class="fa-solid fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Mid Section -->
-    <section class="max-w-7xl mx-auto px-6 py-20 overflow-hidden">
-        <div class="bg-slate-900 rounded-[3rem] p-12 md:p-24 relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-indigo-500/20 to-transparent"></div>
-            <div class="relative z-10 max-w-2xl">
-                <h2 class="text-3xl md:text-5xl font-black text-white mb-8 leading-tight">
-                    個人の創造性を解き放ち、<br>
-                    世界を共鳴させる。
+    <!-- Narrative Section -->
+    <section class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter leading-tight">
+                    テクノロジーは、<br>
+                    <span class="text-indigo-400">心拍数</span>を高めるために。
                 </h2>
-                <p class="text-slate-400 text-lg mb-10 font-medium">
-                    私たちは単なるプラットフォームではありません。
-                    あなたの「作りたい」という衝動を、社会の「必要」へと結びつけるための、
-                    最も情熱的で、最も技術に忠実なコミュニティです。
+                <p class="text-slate-400 text-lg leading-relaxed mb-8">
+                    私たちはただコードを書くのではありません。ただデザインを描くのでもありません。
+                    そこに魂（エトス）を込め、社会に響く（エコー）物語を設計します。
+                    冷たい機械の論理に、人間のぬくもりを。
                 </p>
                 <div class="flex items-center gap-6">
-                    <div class="flex -space-x-4">
-                        <img class="w-12 h-12 rounded-full border-4 border-slate-900" src="https://i.pravatar.cc/100?u=1" alt="Member">
-                        <img class="w-12 h-12 rounded-full border-4 border-slate-900" src="https://i.pravatar.cc/100?u=2" alt="Member">
-                        <img class="w-12 h-12 rounded-full border-4 border-slate-900" src="https://i.pravatar.cc/100?u=3" alt="Member">
+                    <div class="flex -space-x-3">
+                        <div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-slate-700"></div>
+                        <div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-indigo-500"></div>
+                        <div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-purple-500"></div>
                     </div>
-                    <span class="text-white text-sm font-black">500+ Creators joined</span>
+                    <p class="text-sm font-bold text-slate-300">Join our visionaries</p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-square rounded-[4rem] bg-gradient-to-tr from-[#7C3AED] to-pink-500 p-1">
+                    <div class="w-full h-full rounded-[3.8rem] bg-slate-900 flex items-center justify-center overflow-hidden">
+                        <div class="relative flex items-center justify-center w-full h-full">
+                            <div class="absolute w-40 h-40 bg-indigo-600/20 rounded-full animate-ping"></div>
+                            <div class="absolute w-60 h-60 border border-indigo-500/30 rounded-full"></div>
+                            <div class="absolute w-80 h-80 border border-indigo-500/10 rounded-full"></div>
+                            <span class="text-8xl font-black opacity-10">E&E</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,11 +199,31 @@
 
 <footer class="bg-slate-900 text-white py-16 px-6 mt-20">
   <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
-    <h4 class="text-2xl font-black mb-6">Co-Create Tech</h4>
-    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーを通じて個人の創造性を解き放ち、心に響く共感の輪を世界に広げる。</p>
+    <h4 class="text-2xl font-black mb-6">エトス・アンド・エコー</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーは人間の創造性を拡張し、共感を生むためのツールであるべきだ。</p>
   </div>
-  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 Co-Create Tech. Built with MySiteGen-Agent.</p>
+  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 エトス・アンド・エコー. Built with MySiteGen-Agent.</p>
 </footer>
+
+<script>
+    // Add simple scroll animation class handling if needed
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.group').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    });
+</script>
 
 </body>
 </html>
