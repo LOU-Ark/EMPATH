@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共鳴の場：エコー・チャンバー | エトス・アンド・エコー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        .echo-wave {
+            position: absolute;
+            border: 2px solid #7C3AED;
+            border-radius: 50%;
+            opacity: 0;
+            animation: ripple 4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        }
+        .echo-wave:nth-child(2) { animation-delay: 1s; }
+        .echo-wave:nth-child(3) { animation-delay: 2s; }
+        @keyframes ripple {
+            0% { width: 0; height: 0; opacity: 0.5; }
+            100% { width: 500px; height: 500px; opacity: 0; top: -250px; left: -250px; }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(124, 58, 237, 0.1);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
+    <a href="../index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #7C3AED">
+        エ
+      </div>
+      <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
+        エトス・アンド・エコー
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
+      <a href="../ethos-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        信頼の源泉：エトス・コア
+      </a>
+    
+      <a href="../echo-resonance/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        共鳴の場：エコー・チャンバー
+      </a>
+    
+      <a href="../synthesis-lab/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        価値の拡張：シンセシス・ラボ
+      </a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#" class="hidden sm:block px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200 whitespace-nowrap">
+        Contact
+      </a>
+      <button class="md:hidden p-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <i class="fa-solid fa-bars-staggered text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
+    <div class="flex flex-col gap-4">
+      <a href="../ethos-core/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        信頼の源泉：エトス・コア
+      </a>
+    
+      <a href="../echo-resonance/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        共鳴の場：エコー・チャンバー
+      </a>
+    
+      <a href="../synthesis-lab/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        価値の拡張：シンセシス・ラボ
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-white">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div class="echo-wave"></div>
+                <div class="echo-wave"></div>
+                <div class="echo-wave"></div>
+            </div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest text-white rounded-full bg-[#7C3AED] uppercase">Echo Chamber</span>
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tighter text-slate-900">
+                声が重なり、<br><span class="text-[#7C3AED]">響き</span>が深まる。
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
+                単なる反響ではない。個の意志が他者と衝突し、調和し、増幅されることで、元の形を超えた「大きなうねり」へと進化する場所。
+            </p>
+        </div>
+    </section>
+
+    <!-- Concept Grid -->
+    <section class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-10 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-500">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-bullhorn text-2xl text-[#7C3AED]"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">Pulse<br>起点の放射</h3>
+                    <p class="text-slate-500 leading-relaxed font-medium">純粋な好奇心や情熱から生まれる最初のひと声。それが全ての始まりとなる波紋です。</p>
+                </div>
+
+                <div class="p-10 rounded-[2.5rem] bg-[#7C3AED] text-white shadow-xl shadow-indigo-200/50 hover:-translate-y-2 transition-transform duration-500">
+                    <div class="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-arrows-spin text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">Reflection<br>多角的な反射</h3>
+                    <p class="text-white/80 leading-relaxed font-medium">異なる背景を持つ個性が、独自の解釈というフィルターを通して声を跳ね返します。</p>
+                </div>
+
+                <div class="p-10 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-500">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-bolt-lightning text-2xl text-[#7C3AED]"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">Resonance<br>共鳴の増幅</h3>
+                    <p class="text-slate-500 leading-relaxed font-medium">重なり合った波形は、エネルギーを数倍に高め、想像もしなかった解決策へと辿り着きます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Quote Section -->
+    <section class="py-32 relative overflow-hidden bg-slate-900">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-[#7C3AED] rounded-full blur-[120px] opacity-20"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-indigo-500 rounded-full blur-[120px] opacity-20"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <div class="mb-12">
+                <i class="fa-solid fa-quote-left text-5xl text-[#7C3AED]"></i>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-black text-white leading-tight mb-12">
+                「正しい答え」を求めるのではなく、<br>「より遠くへ響く問い」を。
+            </h2>
+            <div class="flex justify-center gap-4">
+                <div class="h-1 w-12 bg-[#7C3AED] rounded-full"></div>
+                <div class="h-1 w-4 bg-white/20 rounded-full"></div>
+                <div class="h-1 w-4 bg-white/20 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Visual (Static Illustration) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="flex-1 space-y-8">
+                    <h2 class="text-4xl font-black text-slate-900 tracking-tight">閉じられた連鎖を、<br>開かれた創造へ。</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        一般的な「エコー・チャンバー」は、同じ意見だけが循環する閉鎖的な場を指します。しかし私たちが定義するそれは、未知の振動を歓迎し、調和（ハーモニー）を生み出すための開放的な舞台です。
+                    </p>
+                    <div class="pt-6">
+                        <a href="#" class="inline-flex items-center gap-3 text-[#7C3AED] font-black group">
+                            さらに詳しく
+                            <span class="w-10 h-10 rounded-full bg-indigo-50 flex items-center justify-center group-hover:bg-[#7C3AED] group-hover:text-white transition-all">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 relative w-full aspect-square max-w-[500px]">
+                    <div class="absolute inset-0 bg-[#7C3AED]/5 rounded-[3rem] rotate-3"></div>
+                    <div class="absolute inset-0 bg-white border-2 border-slate-100 rounded-[3rem] -rotate-3 p-8 flex items-center justify-center">
+                        <div class="grid grid-cols-4 gap-4 items-end h-32">
+                            <div class="w-full bg-[#7C3AED] rounded-full h-[40%] animate-pulse"></div>
+                            <div class="w-full bg-[#7C3AED] rounded-full h-[90%] animate-pulse" style="animation-delay: 0.2s"></div>
+                            <div class="w-full bg-[#7C3AED] rounded-full h-[60%] animate-pulse" style="animation-delay: 0.4s"></div>
+                            <div class="w-full bg-[#7C3AED] rounded-full h-[100%] animate-pulse" style="animation-delay: 0.6s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-slate-900 text-white py-16 px-6 mt-20">
+  <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
+    <h4 class="text-2xl font-black mb-6">エトス・アンド・エコー</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">テクノロジーは人間の創造性を拡張し、共感を生むためのツールであるべきだ。</p>
+  </div>
+  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 エトス・アンド・エコー. Built with MySiteGen-Agent.</p>
+</footer>
+
+</body>
+</html>
