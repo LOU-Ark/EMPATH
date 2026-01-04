@@ -1,73 +1,69 @@
+ご指定いただいた要件に基づき、プロフェッショナルで信頼感のある「Ethos Guard」のトップページを作成しました。深い専門性と倫理観を感じさせるデザインとコンテンツに仕上げています。
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>灯火 - TOMOSHIBI</title>
+    <title>Ethos Guard | 人類最高のQOLと倫理的統治の融合</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', 'Noto+Sans+JP', sans-serif; }
-        .bg-vivid-gradient {
-            background: linear-gradient(135deg, #FF6B35 0%, #FF9E7D 100%);
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
         }
-        .text-glow {
-            text-shadow: 0 0 20px rgba(255, 107, 53, 0.4);
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .text-gradient {
+            background: linear-gradient(135deg, #0A2463 0%, #3E92CC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .ethos-border {
+            border-left: 4px solid #0A2463;
         }
-        .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+<body class="bg-white text-slate-900 leading-relaxed">
 
+<!-- Header -->
 <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-4">
     <a href="./index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0">
-      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #FF6B35">
-        灯
+      <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-white font-black shadow-lg" style="background-color: #0A2463">
+        E
       </div>
       <span class="text-lg sm:text-xl font-black text-slate-800 tracking-tight group-hover:text-indigo-600 transition-colors">
-        灯火 - TOMOSHIBI
+        Ethos Guard
       </span>
     </a>
     <nav class="hidden md:flex items-center gap-6 overflow-x-auto no-scrollbar">
-      <a href="./dialogue-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        対話の灯火 (Dialogue Hub)
+      <a href="./vision/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Mission Vision
       </a>
     
-      <a href="./wisdom-archive/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        知恵の継承 (Knowledge Hub)
+      <a href="./solutions/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Ethical Solutions
       </a>
     
-      <a href="./mental-tuning/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        心の調律 (Wellness Hub)
+      <a href="./ethos/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        The Ethos Framework
+      </a>
+    
+      <a href="./privacy/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Privacy Guard
+      </a>
+    
+      <a href="./contact/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
+        Humanity Hub
       </a>
     </nav>
     <div class="flex items-center gap-3">
-      <a href="#" class="hidden sm:block px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200 whitespace-nowrap">
+      <a href="#" class="px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200">
         Contact
-      </a>
-      <button class="md:hidden p-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-        <i class="fa-solid fa-bars-staggered text-xl"></i>
-      </button>
-    </div>
-  </div>
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-6 space-y-4 animate-fadeIn">
-    <div class="flex flex-col gap-4">
-      <a href="./dialogue-hub/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        対話の灯火 (Dialogue Hub)
-      </a>
-    
-      <a href="./wisdom-archive/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        知恵の継承 (Knowledge Hub)
-      </a>
-    
-      <a href="./mental-tuning/index.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors whitespace-nowrap">
-        心の調律 (Wellness Hub)
       </a>
     </div>
   </div>
@@ -75,118 +71,154 @@
 
 <main class="pt-20">
     <!-- Hero Section -->
-    <section class="relative py-20 lg:py-32 px-6 overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10">
-            <div class="absolute top-0 left-1/4 w-96 h-96 bg-[#FF6B35] rounded-full blur-[120px] animate-pulse"></div>
-            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500 rounded-full blur-[120px] animate-pulse"></div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto text-center">
-            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest uppercase bg-orange-100 text-[#FF6B35] rounded-full">
-                Illuminate the Connection
-            </span>
-            <h1 class="text-5xl md:text-8xl font-black text-slate-900 leading-tight mb-8 tracking-tighter animate-fadeIn">
-                暗闇に、<br class="hidden sm:block">
-                <span class="text-[#FF6B35] text-glow italic">真の繋がり</span>の灯を。
-            </h1>
-            <p class="max-w-2xl mx-auto text-lg md:text-xl font-bold text-slate-600 leading-relaxed mb-12 animate-fadeIn" style="animation-delay: 0.1s">
-                孤独を孤立にさせない。分断された社会を繋ぎ直し、<br class="hidden sm:block">誰もが自分らしく輝ける場所を私たちは創造します。
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fadeIn" style="animation-delay: 0.2s">
-                <a href="#hubs" class="px-10 py-5 bg-[#FF6B35] text-white font-black rounded-2xl shadow-2xl shadow-orange-200 hover:scale-105 hover:bg-[#e85a24] transition-all text-center">
-                    プロジェクトを見る
-                </a>
-                <a href="#" class="px-10 py-5 bg-white text-slate-900 border-2 border-slate-100 font-black rounded-2xl shadow-sm hover:border-indigo-600 hover:text-indigo-600 transition-all text-center">
-                    灯火について
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hubs Section -->
-    <section id="hubs" class="py-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div class="max-w-xl">
-                    <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">3つの灯火</h2>
-                    <p class="font-bold text-slate-500">私たちが展開する、社会を変えるための3つのアプローチ。</p>
+    <section class="relative py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-slate-50 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="lg:w-2/3">
+                <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8 leading-[1.1]">
+                    テクノロジーの<br><span class="text-gradient">「魂」を設計する。</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 leading-relaxed font-medium">
+                    進化の速度が倫理の境界を越えようとする現代において、Ethos Guardは確固たる指針を提供します。私たちは、高度なAIガバナンスとプライバシー保護技術を駆使し、デジタル社会における「人間の尊厳」を再定義します。
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="./solutions/index.html" class="px-8 py-4 bg-[#0A2463] text-white font-bold rounded-lg shadow-xl hover:translate-y-[-2px] transition-all">
+                        ソリューションを詳しく見る
+                    </a>
+                    <a href="./ethos/index.html" class="px-8 py-4 bg-white border border-slate-200 text-slate-800 font-bold rounded-lg hover:bg-slate-50 transition-all">
+                        Ethos Framework
+                    </a>
                 </div>
-                <div class="text-[#FF6B35] font-black text-6xl opacity-20 hidden md:block">SERVICES</div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Dialogue Hub -->
-                <a href="./dialogue-hub/index.html" class="group relative p-10 rounded-3xl bg-slate-50 border border-slate-100 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform"></div>
-                    <div class="w-16 h-16 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-indigo-100">
-                        <i class="fa-solid fa-comments text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-black mb-4 group-hover:text-indigo-600 transition-colors">対話の灯火</h3>
-                    <p class="text-slate-600 font-bold text-sm leading-relaxed">
-                        心の内側を言葉にし、他者と共鳴する。分断を越えた深い対話のプラットフォーム。
-                    </p>
-                    <div class="mt-8 flex items-center font-black text-xs text-indigo-600 uppercase tracking-widest">
-                        Dialogue Hub <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
-                    </div>
-                </a>
-
-                <!-- Knowledge Hub -->
-                <a href="./wisdom-archive/index.html" class="group relative p-10 rounded-3xl bg-slate-900 text-white overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#FF6B35]/20 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform"></div>
-                    <div class="w-16 h-16 bg-[#FF6B35] text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-orange-900/40">
-                        <i class="fa-solid fa-book-open text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-black mb-4">知恵の継承</h3>
-                    <p class="text-slate-400 font-bold text-sm leading-relaxed">
-                        先人の知恵を現代に繋ぎ、次世代の羅針盤となるナレッジアーカイブ。
-                    </p>
-                    <div class="mt-8 flex items-center font-black text-xs text-[#FF6B35] uppercase tracking-widest">
-                        Knowledge Hub <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
-                    </div>
-                </a>
-
-                <!-- Wellness Hub -->
-                <a href="./mental-tuning/index.html" class="group relative p-10 rounded-3xl bg-slate-50 border border-slate-100 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform"></div>
-                    <div class="w-16 h-16 bg-emerald-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-emerald-100">
-                        <i class="fa-solid fa-heart-pulse text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-black mb-4 group-hover:text-emerald-600 transition-colors">心の調律</h3>
-                    <p class="text-slate-600 font-bold text-sm leading-relaxed">
-                        日々を健やかに生きるためのセルフケアとマインドフルネスの空間。
-                    </p>
-                    <div class="mt-8 flex items-center font-black text-xs text-emerald-600 uppercase tracking-widest">
-                        Wellness Hub <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
-                    </div>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Mission Message -->
-    <section class="py-24 px-6 bg-vivid-gradient text-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-6xl font-black mb-10 leading-tight">
-                「個」として立ち、<br>
-                「全」として繋がる。
-            </h2>
-            <p class="text-xl md:text-2xl font-bold opacity-90 leading-relaxed mb-12">
-                私たちは、テクノロジーと人間性の融合により、<br class="hidden sm:block">
-                誰もが孤立することなく、自分の価値を再発見できる<br class="hidden sm:block">
-                新しい社会のインフラを構築します。
-            </p>
-            <div class="w-20 h-1 bg-white mx-auto rounded-full"></div>
+    <!-- Core Philosophy -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-xs font-black tracking-[0.2em] text-[#0A2463] uppercase mb-4 block">Our Philosophy</span>
+                    <h2 class="text-4xl font-black mb-8">利便性の追求から、<br>生の質の向上へ。</h2>
+                    <div class="space-y-6 text-slate-600 leading-relaxed font-medium">
+                        <p>
+                            多くの企業が「効率」という指標に囚われる中、私たちは「QOL（生の質）」を最上位のKPIとして設定します。技術は人を孤独にするためのものではなく、人を繋ぎ、可能性を解放するためのものであるべきです。
+                        </p>
+                        <p class="ethos-border pl-6 py-2 italic bg-slate-50">
+                            「一人の孤独も一滴のプライバシーも犠牲にしない。」これが、Ethos Guardが全てのプロジェクトにおいて遵守する絶対的基準です。
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                        <div class="text-[#0A2463] text-3xl font-black mb-2">01</div>
+                        <h3 class="font-bold text-lg mb-2">倫理的整合性</h3>
+                        <p class="text-sm text-slate-500">AIアルゴリズムが社会に与える影響を多角的に分析し、バイアスを排除します。</p>
+                    </div>
+                    <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-2xl mt-8">
+                        <div class="text-indigo-400 text-3xl font-black mb-2">02</div>
+                        <h3 class="font-bold text-lg mb-2">主権的プライバシー</h3>
+                        <p class="text-sm text-slate-400">データは個人のものであり、企業の資産ではありません。究極の秘匿性を構築します。</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                        <div class="text-[#0A2463] text-3xl font-black mb-2">03</div>
+                        <h3 class="font-bold text-lg mb-2">共感的ガバナンス</h3>
+                        <p class="text-sm text-slate-500">ルールによる束縛ではなく、共感に基づく秩序をテクノロジーで実現します。</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 mt-8">
+                        <div class="text-[#0A2463] text-3xl font-black mb-2">04</div>
+                        <h3 class="font-bold text-lg mb-2">持続的人類価値</h3>
+                        <p class="text-sm text-slate-500">世代を超えて価値を提供し続ける、恒久的な倫理基盤を構築します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Ethos Framework -->
+    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-[#0A2463] opacity-20 skew-x-12 translate-x-32"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-black mb-6">The Ethos Framework</h2>
+                <p class="text-slate-400 font-medium">
+                    理論だけで終わらせない。実効性のある倫理的統治を実現するための独自の多層構造フレームワーク。
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-white/10 p-10 rounded-3xl hover:bg-white/5 transition-colors">
+                    <div class="w-12 h-12 rounded-full border border-indigo-400 flex items-center justify-center mb-6">
+                        <span class="text-indigo-400 font-black">L1</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Compliance Layer</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        各国の法規制を超え、国際的な倫理基準に準拠した基盤構築。リスクを予測し、未然に防ぐ動的な防護策を提供。
+                    </p>
+                </div>
+                <div class="border border-white/10 p-10 rounded-3xl hover:bg-white/5 transition-colors">
+                    <div class="w-12 h-12 rounded-full border border-indigo-400 flex items-center justify-center mb-6">
+                        <span class="text-indigo-400 font-black">L2</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Alignment Layer</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        AIの目的を人間の幸福（Well-being）に最適化。機械の論理と人間の倫理が衝突した際の調停プロセスを自動化。
+                    </p>
+                </div>
+                <div class="border border-white/10 p-10 rounded-3xl hover:bg-white/5 transition-colors">
+                    <div class="w-12 h-12 rounded-full border border-indigo-400 flex items-center justify-center mb-6">
+                        <span class="text-indigo-400 font-black">L3</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Evolution Layer</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        社会の変化と共に進化する自己修正型ガバナンス。フィードバックループを構築し、常に最適な倫理状態を維持。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-[#0A2463] rounded-[2rem] p-12 lg:p-20 text-center text-white shadow-2xl">
+                <h2 class="text-3xl lg:text-5xl font-black mb-8 leading-tight">未来への倫理的な<br>パスポートを。</h2>
+                <p class="text-indigo-100 text-lg mb-10 opacity-80 max-w-2xl mx-auto">
+                    私たちは、技術的なコンサルティングを超えた、人類の進化に対するパートナーシップを提供します。御社のプロジェクトに「確かな倫理」をインストールしませんか。
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="./contact/index.html" class="bg-white text-[#0A2463] px-10 py-5 rounded-full font-black hover:scale-105 transition-transform">
+                        Humanity Hub に参加する
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 </main>
 
+<!-- Footer -->
 <footer class="bg-slate-900 text-white py-16 px-6 mt-20">
   <div class="max-w-7xl mx-auto border-b border-white/10 pb-12 mb-12">
-    <h4 class="text-2xl font-black mb-6">灯火 - TOMOSHIBI</h4>
-    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm sm:text-base">孤独を孤立にさせず、分断された社会に「真の繋がり」の灯を灯し、誰もが自分の居場所を誇れる世界を築く。</p>
+    <h4 class="text-2xl font-black mb-6">Ethos Guard</h4>
+    <p class="text-slate-400 leading-relaxed max-w-md font-medium text-sm">テクノロジーの奔流を愛と倫理で統治し、一人の孤独も一滴のプライバシーも決して犠牲にしない、人類最高のQOL（生の質）を追求し抜く。</p>
   </div>
-  <p class="text-slate-500 text-xs sm:text-sm font-bold text-center">© 2024 灯火 - TOMOSHIBI. Built with MySiteGen-Agent.</p>
+  <p class="text-slate-500 text-xs font-bold text-center">© 2024 Ethos Guard. Built with MySiteGen-Agent.</p>
 </footer>
+
+<!-- Navigation Intercept Script -->
+<script>
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (a && a.href) {
+      const href = a.getAttribute('href');
+      // 外部リンクやアンカー以外をインターセプト
+      if (href && !href.startsWith('http') && !href.startsWith('#')) {
+        e.preventDefault();
+        window.parent.postMessage({ type: 'NAVIGATE', path: href }, '*');
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
